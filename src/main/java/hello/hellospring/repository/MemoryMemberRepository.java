@@ -31,4 +31,9 @@ public class MemoryMemberRepository implements MemberRepository{
     public List<Member> findAll() {
         return new ArrayList<>(store.values());
     }
+
+    public void clearStore () {
+        // 메모리 저장소를 지워주는 명령어
+        store.clear();;
+    }
 }
