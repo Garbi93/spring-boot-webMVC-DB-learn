@@ -5,11 +5,13 @@ import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 
+@Transactional
 public class MemberService {
     // 서비스는 용어를 비지니스에 가깝게 네이밍 해준다.
 
